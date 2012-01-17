@@ -9,6 +9,12 @@ logger = zc.buildout.easy_install.logger
 required_by = {}
 
 def _log_requirement(ws, req):
+    if not logger.isEnabledFor(logging.DEBUG):
+        # Sorting the working set and iterating over it's requirements
+        # is expensive, so short cirtuit the work if it won't even be
+        # logged.
+        return
+
     ws = list(ws)
     ws.sort()
     for dist in ws:

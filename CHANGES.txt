@@ -4,7 +4,10 @@ Change history
 0.5 (unreleased)
 ----------------
 
--
+- Performance optimization, avoid sorting the working set and
+  requirements when it won't be logged.  Ported from zc.buildout:
+  http://svn.zope.org/zc.buildout/trunk?rev=124059&view=rev
+  [rossp]  
 
 0.4 2009-05-03
 ----------------
