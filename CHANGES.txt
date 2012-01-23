@@ -1,7 +1,7 @@
 Change history
 ==============
 
-0.5 (unreleased)
+0.5 (2012-01-23)
 ----------------
 
 - Performance optimization, avoid sorting the working set and
@@ -9,7 +9,7 @@ Change history
   http://svn.zope.org/zc.buildout/trunk?rev=124059&view=rev
   [rossp]  
 
-0.4 2009-05-03
+0.4 (2009-05-03)
 ----------------
 
 - Removed duplicated comment lines [mustapha]
