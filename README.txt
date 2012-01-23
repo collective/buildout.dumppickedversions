@@ -22,6 +22,8 @@ can print or generate a versions.cfg file with all not pinned eggs.
 It adds also a comment before each egg picked by zc.buildout as requirment for 
 other eggs containing the list of eggs that required it.
 
+``buildout.dumppickedversions`` requires zc.buildout 1.5 or later.
+
 
 buildout.dumppickedversions options
 -----------------------------------
