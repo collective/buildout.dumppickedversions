@@ -137,23 +137,14 @@ Let's show an example. We will install zope.component::
 
 and let's see the content of the versions.cfg file::
 
-    >>> cat('versions.cfg')
+    >>> print ''.join(sorted(open(join('versions.cfg'))))
+    <BLANKLINE>
+    ...
     [versions]
+    setuptools = N.N
     zc.buildout = N.N
     zc.recipe.egg = N.N
     zope.component = N.N
-    <BLANKLINE>
-    #Required by:
-    #zope.event N.N
-    #zope.interface N.N
-    #zope.component N.N
-    setuptools = N.N
-    <BLANKLINE>
-    #Required by:
-    #zope.component N.N
     zope.event = N.N
-    <BLANKLINE>
-    #Required by:
-    #zope.component N.N
     zope.interface = N.N
-
+    <BLANKLINE>
