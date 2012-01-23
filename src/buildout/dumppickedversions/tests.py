@@ -22,8 +22,7 @@ def doc_suite(test_dir, setUp=zc.buildout.testing.buildoutSetUp, tearDown=zc.bui
     if globs is None:
         globs = globals()
 
-    flags = (doctest.ELLIPSIS | doctest.NORMALIZE_WHITESPACE |
-             doctest.REPORT_ONLY_FIRST_FAILURE)
+    flags = (doctest.ELLIPSIS | doctest.NORMALIZE_WHITESPACE)
 
     package_dir = os.path.split(test_dir)[0]
     if package_dir not in sys.path:
